@@ -138,6 +138,14 @@ a:focus{
   text-align: center;
 }
 
+.discovery-title-extra {
+  display: none;
+}
+
+.copyright {
+  text-align: center;
+}
+
 @media only screen and (min-width: 25em) {
 
   .nav {
@@ -148,6 +156,29 @@ a:focus{
     display: inline-block;
   }
 
+.nav-footer a,
+  .nav-footer a:link,
+  .nav-footer a:visited {
+    display: inline-block;
+  }
+
+  .nav-footer li::after {
+    content: "·";
+    display: inline-block;
+    width: 0.5em;
+
+    color: #666;
+    text-align: right;
+  }
+
+  .nav-footer li:last-child::after {
+    content: none;
+  }
+
+  .discovery-title-extra {
+    display: inline;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -155,11 +186,51 @@ a:focus{
   .title,
   .nav {
     text-align: left;
+}
+    
+    .discovery-text {
+    padding-right: 1.5rem;
+  }
+
+  .copyright {
+    text-align: left;
+  }
+
+  .nav-footer {
+    text-align: right;
+  }
+
+}
+    
+@media only screen and (min-width: 60em) {
+
+  .moon-text {
+    padding-left: 1.5rem;
+  }
+
+  .stats {
+    overflow: hidden;
+  }
+
+  .stats > dt {
+    clear: left;
+    float: left;
+    margin-right: 0.75rem;
+    width: 11em;
+  }
+
+  .stats > dd {
+    float: left;
+  }
+
+  .discovery-text {
+    padding-left: 1.5rem;
   }
 
 }
 
-dt {
+
+/*dt {
   clear: left;
   float: left;
   margin: 0;
@@ -177,10 +248,34 @@ ul {
     overflow: hidden;
     padding: 0;
 }
-    
+  
+  
+.nav-footer a,
+  .nav-footer a:link,
+  .nav-footer a:visited {
+    display: inline-block;
+  }
 
+  .nav-footer li::after {
+    content: "·";
+    display: inline-block;
+    width: 0.5em;
 
+    color: #666;
+    text-align: right;
+  }
 
+  .nav-footer li:last-child::after {
+    content: none;
+  }
+
+  .discovery-title-extra {
+    display: inline;
+  }
+
+}
+
+*/  
 
 
 
