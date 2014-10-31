@@ -232,27 +232,41 @@ a:focus{
 
 label {
   display: block;
+
 }
 
 input + label {
  display: inline-block;
 }
 
-form div {
-    margin-bottom: 2.5rem;
+form {
+   max-width: 35em;
+    margin: 0 auto;
 }
 
-input,
-select,
+legend,
+.name,
+.email,
 textarea {
-    width: 15em;
+    width: 100%;
+    font-size: 1.125rem;
 }
 
+.field {
+    width: 100%;
+}
+textarea {
+    height: 10em;
+}
 
+.button {
+    text-align: center;
+}
 
-
-
-
+th,
+td {
+    text-align: left;
+}
 
 
 
