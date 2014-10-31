@@ -230,6 +230,63 @@ a:focus{
 }
 
 
+label {
+  display: block;
+}
+
+input + label {
+ display: inline-block;
+}
+
+form div {
+    margin-bottom: 2.5rem;
+}
+
+input,
+select,
+textarea {
+    width: 15em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*dt {
   clear: left;
   float: left;
