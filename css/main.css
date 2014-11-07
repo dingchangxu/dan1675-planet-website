@@ -13,12 +13,14 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+    color: white;
 }
 
 @media only screen and (min-width: 60em) {
 
     html {
         font-size: 110%;
+        color: white;
   }
 
 }
@@ -27,6 +29,7 @@ html {
 
     html {
         font-size: 120%;
+        color: white;
   }
 
 }
@@ -34,7 +37,8 @@ html {
 @media only screen and (min-width: 120em) {
 
     html {
-        font-size: 130%;    
+        font-size: 130%; 
+        color: white;
   }
 
 }
@@ -47,11 +51,12 @@ html {
 body {
   margin: 0;
   padding: 0;
+    background-image: url(../images/univer.jpg);
+    background-position: center;
 }
 
 a:link,
 a:active {
-
     outline: none;
 }
 
@@ -91,6 +96,13 @@ a:focus{
 
 .masthead {
   overflow: hidden;
+  background-image: url(../images/planet-lo.jpg);
+  background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.masthead-moons {
+  background-image: url(../images/moon-lo.jpg);
 }
 
 .title {
@@ -116,23 +128,25 @@ a:focus{
 
 .nav a:hover,
 .nav a:focus,
-.nav a:active {
+.nav a:active,
+.nav .nav-current,
+.nav .nav-current:link,
+.nav .nav-current:visited{
   background-color: #0074D9;
-
   color: #fff;
 }
 
 .section-dark {
-  background-color: #ccc;
+  
 }
 
 .section-mid {
-  background-color: #e2e2e2;
+  
 }
 
-.section {
+/*.section {
   background-color: #efefef;
-}
+}*/
 
 .intro {
   text-align: center;
@@ -162,7 +176,7 @@ a:focus{
     display: inline-block;
   }
 
-  .nav-footer li::after {
+  .nav-footer li:after {
     content: "·";
     display: inline-block;
     width: 0.5em;
@@ -186,14 +200,17 @@ a:focus{
   .title,
   .nav {
     text-align: left;
+    color: white;
 }
     
     .discovery-text {
     padding-right: 1.5rem;
+
   }
 
   .copyright {
     text-align: left;
+    color: white;
   }
 
   .nav-footer {
@@ -227,7 +244,7 @@ a:focus{
     padding-left: 1.5rem;
   }
 
-}
+}    
 
 
 label {
